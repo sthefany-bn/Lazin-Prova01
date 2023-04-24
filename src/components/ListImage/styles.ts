@@ -4,12 +4,14 @@ import { colors } from "../../styles/colors"
 export const styles = StyleSheet.create({
     list: {
         margin: 20,
-        marginTop: 60,
+        marginTop: 40,
         alignItems: "center"
     },
     text: {
-        marginLeft: 10,
-        fontSize: 32,
-        color: colors.white
+        textAlign: "center",
+        fontSize: 25,
+        color: colors.black,
+        marginRight: 20,
+        marginLeft: 20
     }
 })

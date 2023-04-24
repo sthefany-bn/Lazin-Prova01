@@ -7,14 +7,13 @@ export function Pagina2({setPageI, pageNumber}:IPage) {
     const img1 = require("../../assets/img1.png")
     const img2 = require("../../assets/img2.png")
     const pagina2Texto = [
-        {id: '1', text: 'As melhores!', img: img1 },
-        {id: '2', text: 'Pra curtir!', img: img2 },
+        {id: '1', text: 'Circuito de Saída de Encoders', img: img1 },
+        {id: '2', text: 'Circuito de Memória RAM', img: img2 },
     ]
     return (
         <View style={styles.container}>
             <ComponetPageTitulo setPageI={setPageI} pageNumber={pageNumber}/>
             <View style={styles.panel}>
-                <ComponetPanelTitulo titulo="Crie capa e título para sua playlist"/>
                 <FlatList
                     data={pagina2Texto}
                     renderItem={({ item }) =>

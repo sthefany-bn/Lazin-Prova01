@@ -13,5 +13,9 @@ export const styles = StyleSheet.create({
         color: colors.white,
         fontWeight: "bold",
         fontSize: 40
+    },
+    img: {
+        backgroundColor: colors.primaryLight,
+        borderRadius: 10
     }
 })

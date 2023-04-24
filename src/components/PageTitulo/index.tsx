@@ -1,6 +1,7 @@
-import { Text, TouchableOpacity, View} from "react-native"
+import { Text, TouchableOpacity, View, Image} from "react-native"
 import { styles } from "./styles"
 import { IPage } from "../../../App"
+import { AntDesign } from '@expo/vector-icons';
 
 export function PageTitulo({setPageI, pageNumber}:IPage) {
     return (
@@ -8,15 +9,17 @@ export function PageTitulo({setPageI, pageNumber}:IPage) {
             {pageNumber == 1 ? (
                 <>
                     <TouchableOpacity onPress={() => setPageI(pageNumber)}>
-                        <Text style={styles.text}>{'<<'}</Text>
+                        <AntDesign name="leftcircle" size={40} color={"white"}/>
                     </TouchableOpacity>
-                    <Text style={styles.text}>Solta o SOM</Text>
+                    <Text style={styles.text}>Chip</Text>
+                    <Image source={require('../../assets/logo.png')} style={styles.img} />
                 </>
             ) : (
                 <>
-                    <Text style={styles.text}>Solta o SOM</Text>
+                    <Image source={require('../../assets/logo.png')} style={styles.img} />
+                    <Text style={styles.text}>Chip</Text>
                     <TouchableOpacity onPress={() => setPageI(pageNumber)}>
-                        <Text style={styles.text}>{'>>'}</Text>
+                        <AntDesign name="rightcircle" size={40} color={"white"}/>
                     </TouchableOpacity>
                 </>
             )}

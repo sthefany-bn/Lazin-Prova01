@@ -3,9 +3,9 @@ import { colors } from "../../styles/colors"
 
 export const styles = StyleSheet.create({
     bolinha: {
-        width: 15,
-        height: 15,
-        backgroundColor: colors.white,
+        width: 8,
+        height: 8,
+        backgroundColor: colors.black,
         borderRadius: 8
     }
 })

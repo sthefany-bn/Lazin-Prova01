@@ -9,6 +9,9 @@ export const styles = StyleSheet.create({
         flex: 1,
         margin: 20,
         borderRadius: 20,
-        backgroundColor: colors.secondary
+        backgroundColor: colors.primaryLight
+    },
+    cima: {
+        marginTop: 20
     }
 })
